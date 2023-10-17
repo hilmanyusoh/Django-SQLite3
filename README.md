@@ -8,8 +8,8 @@ This website provides travel advice for independent tourists looking to explore 
 
 * Install
   *   Python3
-Markup : * Python libraries:
-                  * Django [readmore](https://www.djangoproject.com/start/overview/)
-                  * MySQLite3 [readmore](https://www.sqlite.org/index.html)
+  *   Python libraries:
+      * Django [readmore](https://www.djangoproject.com/start/overview/)
+      * MySQLite3 [readmore](https://www.sqlite.org/index.html)
      
       
