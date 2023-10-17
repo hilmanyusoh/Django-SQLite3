@@ -9,6 +9,6 @@ This website provides travel advice for independent tourists looking to explore 
 * Install
   *   Python3
   *   Python libraries:
-            *     [django] {https://www.djangoproject.com/start/overview/}
+            *    [django](https://www.djangoproject.com/start/overview/)
      
       
