@@ -1,0 +1,48 @@
+{% extends "main.html" %}
+
+{% block title %}
+    <title>My First Page</title>
+{% endblock %}
+{% block content %}
+    <div>
+        <br>
+        <br>
+        <h1 style="color:red ;text-align: center">Form about checkname </h1>
+        <hr>
+        <br>
+         <h2 class="text-center">Name list of Members</h2>
+         <br>
+         {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-danger" role="alert">
+                  <strong> {{message}} </strong>
+            </div>
+            {% endfor %}
+         {% endif %}
+         <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Member ID</th>
+                <th scope="col">FirstName - Lastname</th>
+                <th scope="col">Date </th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for checkname in all_checkname %}
+              <tr>
+                <th scope="row">{{checkname.id}} </th>
+                <td>{{checkname.name}} </td>
+                <td>{{checkname.date}} </td>
+                <td><a href="edit/{{checkname.id}}" class="btn btn-warning">Edit</a></td>
+                <td>
+                  <a href="delete/{{checkname.id}}" class="btn btn-danger" onclick="return confirm('Do you want to delete {{checkname.name}}')">Delete</a>
+                </td>
+              </tr>
+          
+              {% endfor %}
+            </tbody>
+          </table>
+    </div>
+   {% endblock %}

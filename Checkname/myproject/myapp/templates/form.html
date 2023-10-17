@@ -1,0 +1,28 @@
+{% extends "main.html" %}
+
+{% block title %}
+    <title>Form</title>
+{% endblock %}
+
+{% block content %}
+<br>
+<h2 class="text-center" style="color: rgb(0, 8, 255);" >เช็คชื่อ</h2>
+<br>
+<br>
+    <form method="post" action="form">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for ="name">ชื่อ-สกุล</label>
+            <input type="text" name="name" class="form-control">
+        </div>
+        <br>
+        <div class="form-group mb-3">
+            <label for="date">วันที่</label>
+            <br>
+            <input type="date" id="date" name="date">
+        </div>
+        <br>
+        <input type="Submit" value="บันทึกข้อมูล" class="btn btn-success">
+    </form>
+{% endblock %}
+       
