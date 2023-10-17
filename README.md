@@ -15,7 +15,7 @@ This website provides travel advice for independent tourists looking to explore 
    
  # Web page #
 
-## Feed page"/"
+ ## Feed page"/"
 
 You can use it to check on students or teachers. That the students come to study, who comes to study or not? Or will a teacher come to work or what day
      
