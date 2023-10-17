@@ -3,7 +3,7 @@
 This website is about checking names for students who want to check members or teachers. The purpose is to help in checking the names of students or members coming to study and work more easily or not. and more convenient
 
 * Tool
-  *   Visual studio (for provide code)
+  *   Visual studio (for provide code) 
   *   SQLite3 (for database)
 
 * Install
